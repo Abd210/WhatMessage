@@ -1,35 +1,82 @@
-WhatsDown Messaging Web Application -Web Programming Project
-An amateur-ish kind of whatsapp, in which you can search users and add them to your contacts list or remove them, you can send visible/hidden texts or images (just like on discord), you can set the chat's wallpaper, you can set the wallpaper's color, set a dark-light theme. Everything is saved on a MySQL database.
 
-Technical Details
-This web app uses only vanilla JavaScript, HTML, CSS & Bootstrap for the front-end. The back-end is written in PHP. The web app is hosted using XAMPP locally. It makes use of the Apache server for running PHP scripts and MySQL server for hosting the database. The front-end is split into two javascript files, one for the login page and one for the rest of the app. In the back-end, each server request has its own php script associated with it, so there's a bunch of them inside the php_scripts folder.
+# WhatsDown Messaging Web Application  
 
-Setting it Up
-1. Installing XAMPP
-Check the official page for the right version for you.
+**A Web Programming Project**  
 
-2. Cloning this Repository
-First you have to go into the terminal, move to the directory of the xampp app and then go into htdocs by running:
+An amateur-inspired messaging application akin to WhatsApp, with features such as user search, contact management, and customizable chat settings. Users can:  
+- Add or remove contacts.  
+- Send visible/hidden text messages or images (similar to Discord).  
+- Customize chat wallpapers or set wallpaper colors.  
+- Toggle between light and dark themes.  
 
+All data is securely stored in a MySQL database.
+
+---
+
+## 🛠️ Technical Details  
+
+- **Frontend**:  
+  - Built with **vanilla JavaScript**, **HTML**, **CSS**, and **Bootstrap**.  
+  - JavaScript is modularized into two files: one for the login page and another for the main app functionality.  
+
+- **Backend**:  
+  - Powered by **PHP**.  
+  - Each server request corresponds to a specific PHP script, organized within a dedicated `php_scripts` folder.  
+
+- **Hosting**:  
+  - The web application is hosted locally using **XAMPP**.  
+  - Uses an **Apache server** to execute PHP scripts.  
+  - MySQL server is employed for managing the application's database.
+
+---
+
+## 🚀 Setting It Up  
+
+### 1. Installing XAMPP  
+Download the appropriate version of XAMPP for your operating system from the [official website](https://www.apachefriends.org/index.html).  
+
+### 2. Cloning the Repository  
+Navigate to the `htdocs` directory of your XAMPP installation:  
+```bash
 cd xampp/htdocs
+```  
 
+Clone the repository:  
+```bash
 git clone https://github.com/mmswflow-upb/WhatsDown-IWP-Project.git
-3. Running the App
-Run the xampp app, then click on the start buttons adjacent to "Apache" & "MySQL", the web application should be running now.
+```
 
-4. Entering the Database Admin Page
-Click on the "admin" button next to "MySQL", you will be directed to a PHPMyAdmin page.
+### 3. Running the Application  
+- Open the XAMPP application.  
+- Start the **Apache** and **MySQL** services by clicking the "Start" buttons next to them.  
+- The application should now be accessible through your web browser.  
 
-ss1
+### 4. Setting Up the Database  
 
-5. Creating the Database for the App
-On the left, you have a button "new", click it and you will be directed to a page where you can set up a new DB, give it the name "whatsdowndb".
+#### Accessing the Database Admin Page  
+- Click the "Admin" button next to "MySQL" in the XAMPP interface.  
+- You will be redirected to the **PHPMyAdmin** page.  
 
-ss2
+#### Creating the Database  
+- In PHPMyAdmin, click the **"New"** button on the left panel.  
+- Create a new database and name it `whatsdowndb`.  
 
-6. Creating the Users Table
-On the left, the whatsdowndb database will appear, click it then go to the "SQL" section, copy the commands from the sql script then paste it into the text box and click go.
+#### Creating the Users Table  
+- Select the `whatsdowndb` database from the left panel.  
+- Go to the **"SQL"** tab.  
+- Copy the commands from the provided SQL script and paste them into the text box.  
+- Click **"Go"** to execute the commands and create the necessary tables.  
 
-ss3
+### 5. Accessing the Application  
+In your browser, navigate to:  
+```  
+http://localhost/WhatsDown-IWP-Project  
+```
 
-6. Now you can access it by searching in the browser localhost/WhatsDown-IWP-Project
+---
+
+## 📚 Notes  
+
+- Ensure XAMPP is running whenever you access the application locally.  
+- Modify the SQL script if you wish to customize the database structure.  
+- Use `php_scripts` for adding new functionality to the backend.  
